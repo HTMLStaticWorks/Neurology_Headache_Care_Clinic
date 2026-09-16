@@ -1,0 +1,449 @@
+/* 
+Neurology & Headache Care Clinic 
+Premium ThemeForest Style Template
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+    /* Brand Colors */
+    --primary: #2E8B57;
+    --secondary: #236B43;
+    --accent: #D8A85B;
+    --soft-accent: #B9DCD5;
+    
+    /* Backgrounds */
+    --bg: #F7FAF9;
+    --bg-soft: #EDF4F2;
+    --card: #FFFFFF;
+    
+    /* Typography Colors */
+    --text: #172A2A;
+    --text-muted: #657575;
+    
+    /* Utility */
+    --border: rgba(23, 42, 42, 0.09);
+    --shadow-sm: 0 4px 20px rgba(0,0,0,0.03);
+    --shadow-md: 0 10px 30px rgba(0,0,0,0.06);
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    
+    /* Typography Families */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 { font-size: clamp(38px, 4vw, 64px); }
+h2 { font-size: clamp(30px, 3vw, 40px); }
+h3 { font-size: clamp(22px, 2.5vw, 30px); }
+h4 { font-size: 22px; }
+p { font-size: clamp(16px, 1.2vw, 17px); }
+
+/* Typography utility classes */
+.text-primary-brand { color: var(--primary); }
+.text-accent { color: var(--accent); }
+.text-muted-brand { color: var(--text-muted); }
+
+/* Link Colors Override */
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--secondary);
+}
+
+/* Footer Link Hover */
+footer a {
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: var(--primary) !important;
+}
+
+/* Backgrounds */
+.bg-soft { background-color: var(--bg-soft); }
+.bg-primary-brand { background-color: var(--primary); color: #fff; }
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(23, 107, 107, 0.2);
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    background-color: #c4964f;
+    border-color: #c4964f;
+    transform: translateY(-2px);
+}
+
+/* Cards */
+.neuro-card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.neuro-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
+}
+
+/* Base Spacing for Sections */
+.section-padding {
+    padding: 100px 0;
+}
+
+/* Animations */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+/* Scroll to Top Button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+#scrollTopBtn.show {
+    display: flex;
+    opacity: 1;
+}
+
+/* Footer Social Icons Hover */
+.social-icons a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary) !important;
+    transform: translateY(-3px);
+}
+
+/* Emergency Social Icons Hover */
+.emergency-socials a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.emergency-socials a:hover {
+    color: var(--accent) !important;
+    transform: translateY(-3px);
+}
+
+/* Outline Button Overrides */
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+.btn-outline-dark {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-outline-dark:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+/* Active Nav Link & Hover */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    color: var(--primary) !important;
+    font-weight: 600;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--primary) !important;
+    color: #fff !important;
+}
+
+/* Scroll Top Button Custom Hover */
+#scrollTopBtn:hover {
+    background-color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: var(--primary) !important;
+}
+
+/* Scroll Top Button Styles */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+#scrollTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+#scrollTopBtn:hover {
+    background-color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: var(--primary) !important;
+}
+
+/* Override Scroll Top Button BG */
+#scrollTopBtn {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+}
+
+/* Service Link Hover */
+.service-link {
+    transition: all 0.3s ease;
+}
+.service-link:hover, .service-link:hover i {
+    color: var(--accent) !important;
+}
+
+/* Explore Link Green */
+.explore-link, .explore-link i {
+    color: var(--primary) !important;
+    transition: all 0.3s ease;
+}
+.explore-link:hover, .explore-link:hover i {
+    color: var(--primary) !important;
+    opacity: 0.8;
+}
+
+/* Theme & RTL Toggles Hover */
+#theme-toggle:hover, #rtl-toggle:hover {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+}
+
+/* Dashboard Nav Hover */
+.dashboard-nav .hover-primary:hover {
+    background-color: var(--bs-light);
+    color: var(--primary) !important;
+}
+
+/* Auth Links Hover */
+.auth-link {
+    transition: all 0.2s ease;
+}
+.auth-link:hover {
+    opacity: 0.8;
+    text-decoration: underline !important;
+}
+
+/* Social Auth Buttons Hover */
+.social-btn {
+    transition: all 0.3s ease;
+}
+.social-btn:hover {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+}
+.social-btn:hover i {
+    color: white !important;
+}
+
+/* Make sure active pill tab in dashboard looks like brand */
+.dashboard-nav .nav-link.active {
+    background-color: var(--bs-light) !important;
+    color: var(--primary) !important;
+    font-weight: bold;
+}
+.dashboard-nav .nav-link:not(.active) {
+    color: var(--bs-gray-600) !important;
+}
+.dashboard-nav .nav-link:not(.active):hover {
+    background-color: var(--bs-light) !important;
+    color: var(--primary) !important;
+}
+
+/* Mobile Offcanvas Full Width */
+@media (max-width: 991.98px) {
+    .w-100-mobile.offcanvas-lg {
+        width: 100% !important;
+    }
+}
+
+/* -----------------------------
+   DARK MODE GLOBAL OVERRIDES
+------------------------------ */
+[data-theme="dark"] {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --card: #21262d;
+    --text: #c9d1d9;
+    --text-muted: #8b949e;
+    --border: rgba(255, 255, 255, 0.1);
+    
+    --bs-body-bg: var(--bg);
+    --bs-body-color: var(--text);
+}
+
+[data-theme="dark"] body {
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+[data-theme="dark"] .bg-white,
+[data-theme="dark"] .bg-light {
+    background-color: var(--card) !important;
+}
+
+[data-theme="dark"] .text-dark {
+    color: var(--text) !important;
+}
+
+[data-theme="dark"] .border-end,
+[data-theme="dark"] .border-bottom,
+[data-theme="dark"] .border-top {
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .offcanvas,
+[data-theme="dark"] .offcanvas-lg {
+    background-color: var(--card) !important;
+    color: var(--text) !important;
+}
+
+[data-theme="dark"] .list-group-item {
+    background-color: var(--bg-soft) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .table {
+    color: var(--text) !important;
+}
+[data-theme="dark"] .table-light th {
+    background-color: var(--bg-soft) !important;
+    color: var(--text-muted) !important;
+    border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .dashboard-nav .nav-link:not(.active) {
+    color: var(--text-muted) !important;
+}
+[data-theme="dark"] .dashboard-nav .nav-link:not(.active):hover {
+    background-color: var(--bg-soft) !important;
+}
+[data-theme="dark"] .dashboard-nav .nav-link.active {
+    background-color: var(--bg-soft) !important;
+}
+
+/* Dark Mode Text Visibility Fixes */
+[data-theme="dark"] h1, 
+[data-theme="dark"] h2, 
+[data-theme="dark"] h3, 
+[data-theme="dark"] h4, 
+[data-theme="dark"] h5, 
+[data-theme="dark"] h6, 
+[data-theme="dark"] p {
+    color: var(--text) !important;
+}
+[data-theme="dark"] .text-primary-brand {
+    color: var(--soft-accent) !important;
+}
+[data-theme="dark"] .text-muted-brand,
+[data-theme="dark"] .text-muted {
+    color: var(--text-muted) !important;
+}
+[data-theme="dark"] .text-dark,
+[data-theme="dark"] .text-black {
+    color: var(--text) !important;
+}
+[data-theme="dark"] .bg-primary-subtle {
+    background-color: rgba(46, 139, 87, 0.2) !important;
+    color: var(--soft-accent) !important;
+}
+[data-theme="dark"] .bg-success-subtle {
+    background-color: rgba(25, 135, 84, 0.2) !important;
+    color: #75b798 !important;
+}
+[data-theme="dark"] .bg-secondary-subtle {
+    background-color: rgba(108, 117, 125, 0.2) !important;
+    color: #adb5bd !important;
+}
+[data-theme="dark"] .bg-soft {
+    background-color: var(--bg-soft) !important;
+}
+[data-theme="dark"] .text-white {
+    color: var(--text) !important; /* Forces white text to be readable dark text on light backgrounds if inverted, or just stays light on dark */
+}
+
+/* Dark Mode Navigation & Placeholders */
+[data-theme="dark"] .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+[data-theme="dark"] .navbar-nav .nav-link:hover,
+[data-theme="dark"] .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+[data-theme="dark"] .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Remove hover effect for website name in header */
+a.navbar-brand:hover,
+a.text-primary-brand:hover {
+    color: var(--primary) !important;
+}
+[data-theme="dark"] a.navbar-brand:hover,
+[data-theme="dark"] a.text-primary-brand:hover {
+    color: var(--soft-accent) !important;
+}
