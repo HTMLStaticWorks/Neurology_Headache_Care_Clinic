@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Premium Neurology & Headache Care Clinic offering specialized treatments for complex neurological conditions.">
+    <title>Patient Dashboard - Neurology Clinic</title>
+    <link rel="icon" type="image/svg\+xml" href="assets/images/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet"
+        crossorigin="anonymous" id="rtl-stylesheet" disabled>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="d-flex flex-column min-vh-100 bg-soft">
+
+        <!-- Mobile Topbar -->
+        <nav class="navbar navbar-light bg-white border-bottom px-3 py-3 d-lg-none sticky-top shadow-sm">
+            <a class="navbar-brand text-primary-brand fw-bold m-0 fs-5" href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" width="24" height="24"
+                    class="align-text-top me-1">NeurologyCare
+            </a>
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <a href="#" class="text-muted-brand position-relative me-3">
+                    <i class="bi bi-bell fs-4"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle p-1 bg-accent border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none px-1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#dashboardSidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="container-fluid flex-grow-1 p-0">
+            <div class="row g-0 min-vh-100">
+
+                <!-- Sidebar (Offcanvas on Mobile, Fixed Column on Desktop) -->
+                <div class="col-lg-3 col-xl-2 border-end bg-white offcanvas-lg offcanvas-end w-100-mobile"
+                    id="dashboardSidebar">
+
+                    <div class="offcanvas-header border-bottom d-lg-none px-4 py-3">
+                        <a class="text-primary-brand fw-bold text-decoration-none fs-5" href="index.html">
+                            <img src="assets/images/logo.svg" alt="Logo" width="24" height="24"
+                                class="me-2">NeurologyCare
+                        </a>
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                            data-bs-target="#dashboardSidebar"></button>
+                    </div>
+
+                    <div class="offcanvas-body flex-column p-4 h-100">
+                        <!-- Desktop Logo -->
+                        <a class="text-primary-brand fw-bold d-none d-lg-flex align-items-center mb-5 text-decoration-none fs-5"
+                            href="index.html">
+                            <img src="assets/images/logo.svg" alt="Logo" width="28" height="28"
+                                class="me-2">NeurologyCare
+                        </a>
+
+                        <!-- User Info -->
+                        <div class="text-center mb-4">
+                            <div class="bg-primary-brand text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 shadow-sm"
+                                style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                JD
+                            </div>
+                            <h6 class="text-primary-brand fw-bold mb-0">John Doe</h6>
+                            <p class="text-muted-brand small mb-0">Patient ID: #98421</p>
+                        </div>
+
+                        <hr class="text-muted opacity-25 mb-4">
+
+                        <!-- Nav Pills -->
+                        <ul class="nav flex-column gap-2 dashboard-nav nav-pills mb-4" id="dashboardTabs"
+                            role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex align-items-center rounded px-3 py-2" id="overview-tab"
+                                    data-bs-toggle="pill" href="#overview" role="tab" aria-controls="overview"
+                                    aria-selected="true">
+                                    <i class="bi bi-grid me-3"></i> Overview
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center rounded px-3 py-2" id="appointments-tab"
+                                    data-bs-toggle="pill" href="#appointments" role="tab" aria-controls="appointments"
+                                    aria-selected="false">
+                                    <i class="bi bi-calendar-event me-3"></i> Appointments
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center rounded px-3 py-2" id="results-tab"
+                                    data-bs-toggle="pill" href="#results" role="tab" aria-controls="results"
+                                    aria-selected="false">
+                                    <i class="bi bi-file-earmark-medical me-3"></i> Test Results
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center rounded px-3 py-2" id="diary-tab"
+                                    data-bs-toggle="pill" href="#diary" role="tab" aria-controls="diary"
+                                    aria-selected="false">
+                                    <i class="bi bi-journal-medical me-3"></i> Symptom Diary
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center rounded px-3 py-2" id="meds-tab"
+                                    data-bs-toggle="pill" href="#meds" role="tab" aria-controls="meds"
+                                    aria-selected="false">
+                                    <i class="bi bi-prescription me-3"></i> Medications
+                                </a>
+                            </li>
+                            <li class="nav-item mt-3 pt-3 border-top">
+                                <a class="nav-link text-danger d-flex align-items-center rounded px-3 py-2 hover-danger"
+                                    href="index.html">
+                                    <i class="bi bi-box-arrow-right me-3"></i> Log Out
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Bottom Area -->
+                        <div class="mt-auto pt-4 border-top">
+                            <!-- Mobile only Theme/RTL toggles (Desktop toggles are in the header) -->
+                            <div class="d-flex justify-content-center gap-2 mb-4 d-lg-none">
+                                <button class="btn btn-outline-secondary btn-sm rounded-circle px-2 theme-toggle-btn"
+                                    aria-label="Toggle Dark Mode">
+                                    <i class="bi bi-moon-stars"></i>
+                                </button>
+                                <button
+                                    class="btn btn-outline-secondary btn-sm px-3 rounded-pill fw-bold rtl-toggle-btn"
+                                    aria-label="Toggle RTL">
+                                    RTL
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="col-lg-9 col-xl-10 p-4 p-lg-5">
+
+                    <!-- Desktop Header -->
+                    <div class="d-none d-lg-flex justify-content-between align-items-center mb-5 pb-3 border-bottom">
+                        <div>
+                            <h2 class="text-primary-brand fw-bold mb-1">Patient Portal</h2>
+                            <p class="text-muted-brand mb-0">Welcome back, John Doe. Here is an overview of your care.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center gap-4">
+                            <!-- Desktop Theme/RTL toggles -->
+                            <div class="d-flex align-items-center gap-2 border-end pe-4">
+                                <button class="btn btn-outline-secondary btn-sm rounded-circle px-2 theme-toggle-btn"
+                                    aria-label="Toggle Dark Mode">
+                                    <i class="bi bi-moon-stars"></i>
+                                </button>
+                                <button
+                                    class="btn btn-outline-secondary btn-sm px-3 rounded-pill fw-bold rtl-toggle-btn"
+                                    aria-label="Toggle RTL">
+                                    RTL
+                                </button>
+                            </div>
+                            <a href="#" class="text-muted-brand position-relative hover-primary">
+                                <i class="bi bi-bell fs-4"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle p-1 bg-accent border border-light rounded-circle"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="dashboardTabsContent">
+
+                        <!-- 1. OVERVIEW -->
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel"
+                            aria-labelledby="overview-tab">
+                            <div class="row g-4 mb-4">
+                                <!-- Upcoming Appointment -->
+                                <div class="col-md-4">
+                                    <div
+                                        class="neuro-card bg-white border-0 shadow-sm border-start border-4 border-primary p-4 rounded-4 h-100 position-relative overflow-hidden d-flex flex-column justify-content-center">
+                                        <h6 class="text-muted-brand text-uppercase fw-bold mb-3 small tracking-wide">
+                                            Next Appointment</h6>
+                                        <h4 class="text-primary-brand mb-1">Oct 12, 2026</h4>
+                                        <p class="text-muted-brand mb-4">10:00 AM - 10:45 AM</p>
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <img src="assets/images/doctor1.jpg" class="rounded-circle me-3 " width="40"
+                                                height="40" style="object-fit:cover;">
+                                            <div>
+                                                <p class="mb-0 fw-bold small">Dr. Sarah Mitchell</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Quick Stats 1 -->
+                                <div class="col-md-4">
+                                    <div
+                                        class="neuro-card bg-white border-0 shadow-sm p-4 rounded-4 h-100 text-center d-flex flex-column justify-content-center">
+                                        <i class="bi bi-file-earmark-text text-accent fs-1 mb-2"></i>
+                                        <h3 class="text-primary-brand mb-1">2</h3>
+                                        <p class="text-muted-brand small fw-bold mb-0 text-uppercase tracking-wide">New
+                                            Results</p>
+                                    </div>
+                                </div>
+                                <!-- Quick Stats 2 -->
+                                <div class="col-md-4">
+                                    <div
+                                        class="neuro-card bg-white border-0 shadow-sm p-4 rounded-4 h-100 text-center d-flex flex-column justify-content-center">
+                                        <i class="bi bi-prescription2 text-accent fs-1 mb-2"></i>
+                                        <h3 class="text-primary-brand mb-1">3</h3>
+                                        <p class="text-muted-brand small fw-bold mb-0 text-uppercase tracking-wide">
+                                            Active Rx</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recent Activity -->
+                            <div class="neuro-card bg-white border-0 shadow-sm p-4 p-md-5 rounded-4">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h5 class="text-primary-brand fw-bold mb-0">Recent Test Results</h5>
+                                    <a href="#" class="text-primary-brand text-decoration-none small fw-bold"
+                                        onclick="document.getElementById('results-tab').click(); return false;">View
+                                        All</a>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th class="text-muted-brand small fw-bold py-3">Date</th>
+                                                <th class="text-muted-brand small fw-bold py-3">Test Name</th>
+                                                <th class="text-muted-brand small fw-bold py-3">Provider</th>
+                                                <th class="text-muted-brand small fw-bold py-3 text-center">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-muted-brand small py-3">Sep 28, 2026</td>
+                                                <td class="fw-bold text-primary-brand small py-3">Brain MRI (Without
+                                                    Contrast)</td>
+                                                <td class="text-muted-brand small py-3">Dr. James Chen</td>
+                                                <td class="text-center py-3"><span
+                                                        class="badge bg-success-subtle text-success rounded-pill px-3 py-2">Available</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted-brand small py-3">Sep 15, 2026</td>
+                                                <td class="fw-bold text-primary-brand small py-3">Routine EEG Monitoring
+                                                </td>
+                                                <td class="text-muted-brand small py-3">Dr. Sarah Mitchell</td>
+                                                <td class="text-center py-3"><span
+                                                        class="badge bg-success-subtle text-success rounded-pill px-3 py-2">Available</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. APPOINTMENTS -->
+                        <div class="tab-pane fade" id="appointments" role="tabpanel" aria-labelledby="appointments-tab">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h4 class="text-primary-brand fw-bold mb-0">My Appointments</h4>
+                                <a href="appointments.html"
+                                    class="btn btn-primary btn-sm rounded-pill px-4 d-lg-none">New</a>
+                            </div>
+
+                            <div
+                                class="neuro-card bg-white border-0 shadow-sm p-4 rounded-4 mb-4 border-start border-4 border-primary">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 mb-3 mb-md-0 text-center text-md-start">
+                                        <span
+                                            class="badge bg-primary-subtle text-primary-brand rounded-pill mb-2 px-3">Upcoming</span>
+                                        <h5 class="fw-bold text-primary-brand mb-0">Oct 12, 2026</h5>
+                                        <p class="text-muted-brand small mb-0">10:00 AM</p>
+                                    </div>
+                                    <div class="col-md-6 mb-3 mb-md-0">
+                                        <h6 class="fw-bold mb-1">Follow-up Consultation</h6>
+                                        <p class="text-muted-brand small mb-0"><i class="bi bi-geo-alt me-1"></i> Main
+                                            Clinic, Suite 400</p>
+                                        <div class="d-flex align-items-center mt-2">
+                                            <img src="assets/images/doctor1.jpg" class="rounded-circle me-2" width="24"
+                                                height="24" style="object-fit:cover;">
+                                            <span class="small fw-bold text-muted-brand">Dr. Sarah Mitchell</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 text-md-end text-center">
+                                        <button
+                                            class="btn btn-outline-secondary btn-sm rounded-pill px-4">Reschedule</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="text-primary-brand fw-bold mb-3 mt-5">Past Appointments</h5>
+                            <div class="neuro-card bg-white border-0 shadow-sm p-4 rounded-4 opacity-75">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 mb-3 mb-md-0 text-center text-md-start">
+                                        <span
+                                            class="badge bg-secondary-subtle text-secondary rounded-pill mb-2 px-3">Completed</span>
+                                        <h6 class="fw-bold text-muted mb-0">Sep 15, 2026</h6>
+                                    </div>
+                                    <div class="col-md-6 mb-3 mb-md-0">
+                                        <h6 class="fw-bold mb-1 text-muted">Initial Assessment & EEG</h6>
+                                        <p class="text-muted small mb-0">Dr. Sarah Mitchell</p>
+                                    </div>
+                                    <div class="col-md-3 text-md-end text-center">
+                                        <button class="btn btn-link text-primary-brand text-decoration-none btn-sm">View
+                                            Notes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. TEST RESULTS -->
+                        <div class="tab-pane fade" id="results" role="tabpanel" aria-labelledby="results-tab">
+                            <h4 class="text-primary-brand fw-bold mb-4">Laboratory & Imaging</h4>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div
+                                        class="neuro-card bg-white border-0 shadow-sm p-4 rounded-4 h-100 d-flex flex-column">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div class="bg-primary-subtle text-primary-brand rounded p-2 d-inline-flex">
+                                                <i class="bi bi-person-bounding-box fs-5"></i></div>
+                                            <span
+                                                class="badge bg-success-subtle text-success rounded-pill px-3">New</span>
+                                        </div>
+                                        <h6 class="fw-bold mb-1">Brain MRI (Without Contrast)</h6>
+                                        <p class="text-muted-brand small mb-3">Ordered by Dr. James Chen on Sep 28</p>
+                                        <hr class="opacity-10 mb-3">
+                                        <p class="small text-muted-brand mb-4">Findings: Unremarkable examination. No
+                                            evidence of acute intracranial pathology.</p>
+                                        <div class="mt-auto">
+                                            <button class="btn btn-outline-primary btn-sm rounded-pill px-4">Download
+                                                Report PDF</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div
+                                        class="neuro-card bg-white border-0 shadow-sm p-4 rounded-4 h-100 d-flex flex-column">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div class="bg-primary-subtle text-primary-brand rounded p-2 d-inline-flex">
+                                                <i class="bi bi-activity fs-5"></i></div>
+                                            <span
+                                                class="badge bg-secondary-subtle text-secondary rounded-pill px-3">Archived</span>
+                                        </div>
+                                        <h6 class="fw-bold mb-1">Routine EEG Monitoring</h6>
+                                        <p class="text-muted-brand small mb-3">Ordered by Dr. Sarah Mitchell on Sep 15
+                                        </p>
+                                        <hr class="opacity-10 mb-3">
+                                        <p class="small text-muted-brand mb-4">Findings: Normal waking background. No
+                                            epileptiform discharges captured.</p>
+                                        <div class="mt-auto">
+                                            <button class="btn btn-outline-secondary btn-sm rounded-pill px-4">View
+                                                Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4. SYMPTOM DIARY -->
+                        <div class="tab-pane fade" id="diary" role="tabpanel" aria-labelledby="diary-tab">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h4 class="text-primary-brand fw-bold mb-0">Symptom Log</h4>
+                                <button class="btn btn-accent rounded-pill px-4 text-white"><i
+                                        class="bi bi-plus me-2"></i>Log Entry</button>
+                            </div>
+
+                            <div class="neuro-card bg-white border-0 shadow-sm p-4 rounded-4 mb-4">
+                                <h6 class="fw-bold mb-4">Migraine Frequency (Last 30 Days)</h6>
+                                <div class="bg-soft rounded p-4 text-center d-flex align-items-end justify-content-center gap-3"
+                                    style="height: 200px;">
+                                    <div class="bg-primary-brand rounded-top"
+                                        style="width: 40px; height: 30%; opacity: 0.5;"></div>
+                                    <div class="bg-primary-brand rounded-top"
+                                        style="width: 40px; height: 50%; opacity: 0.6;"></div>
+                                    <div class="bg-primary-brand rounded-top"
+                                        style="width: 40px; height: 20%; opacity: 0.4;"></div>
+                                    <div class="bg-primary-brand rounded-top"
+                                        style="width: 40px; height: 80%; opacity: 0.9;"></div>
+                                    <div class="bg-primary-brand rounded-top"
+                                        style="width: 40px; height: 40%; opacity: 0.5;"></div>
+                                    <div class="bg-primary-brand rounded-top"
+                                        style="width: 40px; height: 60%; opacity: 0.7;"></div>
+                                    <div class="bg-primary-brand rounded-top"
+                                        style="width: 40px; height: 10%; opacity: 0.3;"></div>
+                                </div>
+                            </div>
+
+                            <div class="list-group list-group-flush rounded-4 shadow-sm border-0">
+                                <div class="list-group-item bg-white p-4 border-0 mb-1">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fw-bold text-primary-brand mb-1">Migraine with Aura</h6>
+                                            <p class="text-muted-brand small mb-0"><i class="bi bi-clock me-1"></i> Oct
+                                                02, 2026 at 2:00 PM</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="badge bg-danger text-white rounded-pill mb-1">Severity:
+                                                8/10</span>
+                                            <p class="small text-muted mb-0">Duration: 4 hrs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item bg-white p-4 border-0">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fw-bold text-primary-brand mb-1">Tension Headache</h6>
+                                            <p class="text-muted-brand small mb-0"><i class="bi bi-clock me-1"></i> Sep
+                                                28, 2026 at 5:30 PM</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="badge bg-warning text-dark rounded-pill mb-1">Severity:
+                                                4/10</span>
+                                            <p class="small text-muted mb-0">Duration: 1 hr</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. MEDICATIONS -->
+                        <div class="tab-pane fade" id="meds" role="tabpanel" aria-labelledby="meds-tab">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h4 class="text-primary-brand fw-bold mb-0">Active Prescriptions</h4>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div
+                                        class="neuro-card bg-white border-0 shadow-sm p-4 rounded-4 h-100 border-start border-4 border-success">
+                                        <h5 class="fw-bold text-primary-brand mb-1">Topiramate</h5>
+                                        <p class="text-muted-brand small mb-3">50 mg tablet</p>
+                                        <div class="bg-soft p-3 rounded mb-3">
+                                            <p class="mb-1 small fw-bold"><i
+                                                    class="bi bi-info-circle me-2 text-primary-brand"></i>Instructions
+                                            </p>
+                                            <p class="mb-0 small text-muted-brand">Take one tablet by mouth twice daily
+                                                for migraine prevention.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                                            <span class="small text-muted">Refills left: 2</span>
+                                            <button class="btn btn-outline-success btn-sm rounded-pill px-3">Request
+                                                Refill</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div
+                                        class="neuro-card bg-white border-0 shadow-sm p-4 rounded-4 h-100 border-start border-4 border-accent">
+                                        <h5 class="fw-bold text-primary-brand mb-1">Sumatriptan</h5>
+                                        <p class="text-muted-brand small mb-3">100 mg tablet</p>
+                                        <div class="bg-soft p-3 rounded mb-3">
+                                            <p class="mb-1 small fw-bold"><i
+                                                    class="bi bi-info-circle me-2 text-primary-brand"></i>Instructions
+                                            </p>
+                                            <p class="mb-0 small text-muted-brand">Take one tablet at onset of migraine.
+                                                May repeat once after 2 hours.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                                            <span class="small text-muted">Refills left: 0</span>
+                                            <button class="btn btn-outline-secondary btn-sm rounded-pill px-3"
+                                                disabled>Contact Doctor</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

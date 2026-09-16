@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Premium Neurology & Headache Care Clinic offering specialized treatments for complex neurological conditions.">
+    <title>Contact Us - Neurology Clinic</title>
+    <link rel="icon" type="image/svg\+xml" href="assets/images/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet"
+        crossorigin="anonymous" id="rtl-stylesheet" disabled>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl fixed-top bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand text-primary-brand fw-bold" href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" width="24" height="24"
+                    class="me-2 align-text-top">NeurologyCare
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-primary-brand fw-bold" id="offcanvasNavbarLabel"><i
+                            class="bi bi-bezier2 me-2"></i>NeurologyCare</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body align-items-center">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item dropdown d-none d-xl-block">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-xl-none">
+                            <a class="nav-link" href="index.html">Home 1</a>
+                        </li>
+                        <li class="nav-item d-xl-none">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="specialist-care.html">Specialist Care</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctors.html">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+                    <div
+                        class="d-flex flex-column flex-xl-row align-items-stretch align-items-xl-center gap-2 mt-4 mt-xl-0">
+                        <div class="d-flex justify-content-center justify-content-xl-start gap-2 mb-2 mb-xl-0"><button id="theme-toggle" class="btn btn-outline-secondary btn-sm rounded-circle px-2"
+                            aria-label="Toggle Dark Mode">
+                            <i class="bi bi-moon-stars"></i>
+                        </button>
+                        <button id="rtl-toggle" class="btn btn-outline-secondary btn-sm px-3 rounded-pill fw-bold"
+                            aria-label="Toggle RTL">
+                            RTL
+                        </button></div>
+                        <a href="login.html" class="btn btn-outline-primary btn-sm px-3 rounded-pill">Login</a>
+                        <a href="appointments.html" class="btn btn-primary btn-sm px-4 py-2 rounded-pill">Book
+                            Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: Hero -->
+    <header class="section-padding bg-soft d-flex align-items-center position-relative"
+        style="margin-top: 76px; min-height: 400px; background: url('assets/images/contact-hero.jpg') center/cover no-repeat;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-white opacity-75"></div>
+        <div class="container text-center py-5 my-md-4 position-relative z-1">
+            <h1 class="text-primary-brand mb-4 fw-bold">Get In Touch</h1>
+            <p class="text-muted-brand lead max-w-700 mx-auto fw-medium">We are here to answer your questions and help
+                you schedule your consultation.</p>
+        </div>
+    </header>
+
+    <!-- SECTION 2: Contact Information -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-12 col-lg-4">
+                    <div class="neuro-card h-100 border-0">
+                        <i class="bi bi-telephone text-primary-brand fs-1 mb-3"></i>
+                        <h5>Phone</h5>
+                        <p class="text-muted-brand">(555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="neuro-card h-100 border-0">
+                        <i class="bi bi-envelope text-primary-brand fs-1 mb-3"></i>
+                        <h5>Email</h5>
+                        <p class="text-muted-brand">care@neurologycare.demo</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="neuro-card h-100 border-0">
+                        <i class="bi bi-geo-alt text-primary-brand fs-1 mb-3"></i>
+                        <h5>Location</h5>
+                        <p class="text-muted-brand">123 Medical Center Dr.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Contact Form -->
+    <section class="section-padding bg-soft">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="neuro-card border-0 p-5 bg-white">
+                        <h3 class="text-primary-brand mb-4 text-center">Send a Message</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary rounded-pill px-5 py-2">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Interactive Google Map -->
+    <section class="p-0">
+        <div class="w-100" style="height: 400px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2155091771147!2d-73.98822988460424!3d40.75616097932688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1633020619941!5m2!1sen!2sus"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FAQ & Emergency Info -->
+    <section class="section-padding">
+        <div class="container">
+            <h3 class="text-primary-brand text-center mb-5">Frequently Asked Questions</h3>
+            <div class="accordion mb-5" id="contactFaq">
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-transparent fw-bold text-primary-brand" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Do I need a referral to schedule an appointment?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#contactFaq">
+                        <div class="accordion-body text-muted-brand">
+                            Depending on your insurance plan, a referral may be required. Please contact your primary
+                            care provider or our office for assistance.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-transparent fw-bold text-primary-brand"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            What should I bring to my first appointment?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                        <div class="accordion-body text-muted-brand">
+                            Please bring your ID, insurance card, any relevant medical records, a list of current
+                            medications, and any imaging reports (MRI, CT scans) you have.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 border-bottom mb-3">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed fw-bold text-primary-brand" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            Do you offer telemedicine appointments?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted-brand">
+                            Yes, we offer secure telemedicine consultations for specific follow-ups and initial
+                            screenings. Please contact our office to see if your visit qualifies for a telehealth
+                            appointment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary-brand text-white p-5 text-center rounded-4 mt-5 shadow-sm">
+                <h4 class="text-white mb-2">Medical Emergency?</h4>
+                <p class="mb-4 text-white-50">If you are experiencing a medical emergency, please do not use this form.
+                    Call 911 or go to your nearest emergency room immediately.</p>
+                <div class="d-flex justify-content-center gap-3 emergency-socials">
+                    <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4" style="background-color: #0B1718 !important;">
+        <div class="container pt-4">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a class="navbar-brand text-primary-brand fw-bold d-inline-block mb-3 fs-5" href="index.html">
+                        <img src="assets/images/logo.svg" alt="Logo" width="24" height="24"
+                            class="me-2 align-text-top">NeurologyCare
+                    </a>
+                    <p class="text-white-50 small mb-4">Expert neurological care with a patient-first approach.
+                        Precision diagnostics and personalized treatment.</p>
+                    <div class="d-flex gap-3 social-icons">
+                        <a href="#" class="text-white-50 text-decoration-none hover-white"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none hover-white"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none hover-white"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ps-lg-5">
+                    <h5 class="text-white mb-4 fs-6 fw-bold">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="doctors.html" class="text-white-50 text-decoration-none">Doctors</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4 fs-6 fw-bold">Patient Resources</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="appointments.html"
+                                class="text-white-50 text-decoration-none">Appointments</a></li>
+                        <li class="mb-2"><a href="login.html" class="text-white-50 text-decoration-none">Patient
+                                Portal</a></li>
+                        <li class="mb-2"><a href="dashboard/symptom-diary.html"
+                                class="text-white-50 text-decoration-none">Symptom Diary</a></li>
+                        <li class="mb-2"><a href="dashboard/test-results.html"
+                                class="text-white-50 text-decoration-none">Test Results</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white-50 text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4 fs-6 fw-bold">Contact</h5>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-3 d-flex"><i class="bi bi-telephone me-3 mt-1"></i> (555) 123-4567</li>
+                        <li class="mb-3 d-flex"><i class="bi bi-envelope me-3 mt-1"></i> care@neurologycare.demo</li>
+                        <li class="mb-3 d-flex"><i class="bi bi-geo-alt me-3 mt-1"></i> 123 Medical Center Dr.<br>Suite
+                            400<br>City, State 12345</li>
+                        <li class="d-flex"><i class="bi bi-clock me-3 mt-1"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary mt-5 mb-4">
+
+            <div class="row align-items-center pb-3">
+                <div class="col-md-12 text-center mb-3 mb-md-0">
+                    <p class="text-white-50 small mb-0">&copy; 2026 Neurology & Headache Care Clinic. All rights
+                        reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button id="scrollTopBtn" class="btn btn-primary rounded-circle shadow" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

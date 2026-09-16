@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Premium Neurology & Headache Care Clinic offering specialized treatments for complex neurological conditions.">
+    <title>Login - Neurology Clinic</title>
+    <link rel="icon" type="image/svg\+xml" href="assets/images/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet"
+        crossorigin="anonymous" id="rtl-stylesheet" disabled>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>    <div class="min-vh-100 bg-soft d-flex flex-column">
+    <div class="d-flex justify-content-end p-3 p-md-4 w-100">
+        <div class="d-flex align-items-center gap-2">
+            <button id="theme-toggle" class="btn btn-outline-secondary btn-sm rounded-circle px-2" aria-label="Toggle Dark Mode">
+                <i class="bi bi-moon-stars"></i>
+            </button>
+            <button id="rtl-toggle" class="btn btn-outline-secondary btn-sm px-3 rounded-pill fw-bold" aria-label="Toggle RTL">
+                RTL
+            </button>
+        </div>
+    </div>
+        <div class="container flex-grow-1 d-flex flex-column justify-content-center py-4 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-7 col-xl-5">
+                    <div class="neuro-card bg-white border-0 shadow p-4 p-md-5 rounded-4">
+                        <div class="text-center mb-4">
+                            <a class="text-primary-brand fw-bold d-inline-block mb-4 fs-5 text-decoration-none" href="index.html">
+                                <img src="assets/images/logo.svg" alt="Logo" width="24" height="24" class="me-2 align-text-top">NeurologyCare
+                            </a>
+                            <h2 class="text-primary-brand fw-bold mb-2">Welcome Back</h2>
+                            <p class="text-muted-brand">Log in to access your patient portal</p>
+                        </div>
+                        <form action="dashboard.html">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-muted-brand small">Email Address</label>
+                                <input type="email" class="form-control py-2" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-muted-brand small">Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control py-2 border-end-0" placeholder="Enter your password" required>
+                                    <button class="btn btn-outline-secondary border-start-0 border" type="button"><i class="bi bi-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="form-check mb-0">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label text-muted-brand small" for="rememberMe">Remember me</label>
+                                </div>
+                                <a href="#" class="text-accent text-decoration-none small fw-bold auth-link">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-2 rounded-pill fw-bold mb-2">Log In</button>
+                            <div class="position-relative my-4">
+                                <hr class="text-muted opacity-25">
+                                <span class="position-absolute top-50 start-50 translate-middle bg-white px-3 text-muted-brand small">Or continue with</span>
+                            </div>
+                            <div class="row g-2 mb-4">
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-secondary social-btn w-100 py-2 rounded-pill fw-bold text-dark border-opacity-50">
+                                        <i class="bi bi-google text-danger"></i>
+                                    </button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-secondary social-btn w-100 py-2 rounded-pill fw-bold text-dark border-opacity-50">
+                                        <i class="bi bi-apple"></i>
+                                    </button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-secondary social-btn w-100 py-2 rounded-pill fw-bold text-dark border-opacity-50">
+                                        <i class="bi bi-facebook text-primary"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="text-center text-muted-brand mb-0 small">
+                                Don't have an account? <a href="signup.html" class="text-primary-brand text-decoration-none fw-bold auth-link">Sign up here</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+

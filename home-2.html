@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Premium Neurology & Headache Care Clinic offering specialized treatments for complex neurological conditions.">
+    <title>Home - Neurology & Headache Care Clinic</title>
+    <link rel="icon" type="image/svg\+xml" href="assets/images/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet"
+        crossorigin="anonymous" id="rtl-stylesheet" disabled>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl fixed-top bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand text-primary-brand fw-bold" href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo" width="24" height="24"
+                    class="me-2 align-text-top">NeurologyCare
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-primary-brand fw-bold" id="offcanvasNavbarLabel"><i
+                            class="bi bi-bezier2 me-2"></i>NeurologyCare</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body align-items-center">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item dropdown d-none d-xl-block">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item active" href="home-2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-xl-none">
+                            <a class="nav-link" href="index.html">Home 1</a>
+                        </li>
+                        <li class="nav-item d-xl-none">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="specialist-care.html">Specialist Care</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doctors.html">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-column flex-xl-row align-items-stretch align-items-xl-center gap-2 mt-4 mt-xl-0">
+                        <div class="d-flex justify-content-center justify-content-xl-start gap-2 mb-2 mb-xl-0"><button id="theme-toggle" class="btn btn-outline-secondary btn-sm rounded-circle px-2"
+                            aria-label="Toggle Dark Mode">
+                            <i class="bi bi-moon-stars"></i>
+                        </button>
+                        <button id="rtl-toggle" class="btn btn-outline-secondary btn-sm px-3 rounded-pill fw-bold"
+                            aria-label="Toggle RTL">
+                            RTL
+                        </button></div>
+                        <a href="login.html" class="btn btn-outline-primary btn-sm px-3 rounded-pill">Login</a>
+                        <a href="appointments.html" class="btn btn-primary btn-sm px-4 py-2 rounded-pill">Book
+                            Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: Split Hero -->
+    <header class="bg-light" style="margin-top: 76px;">
+        <div class="container-fluid px-0">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 p-5 p-lg-5 order-2 order-lg-1">
+                    <div class="max-w-700 mx-auto ps-lg-5">
+                        <span class="badge bg-primary-brand text-white rounded-pill px-3 py-2 mb-3">Expert Care</span>
+                        <h1 class="text-primary-brand mb-4 fw-bold display-4">Precision Neurology & Compassionate Care
+                        </h1>
+                        <p class="text-muted-brand lead mb-5">We bring together advanced diagnostics and dedicated
+                            specialists to provide tailored pathways for complex neurological conditions.</p>
+                        <div class="d-flex gap-3">
+                            <a href="services.html" class="btn btn-outline-primary rounded-pill px-4 py-3">Our
+                                Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="assets/images/home2-hero.jpg" alt="Medical Professional" class="img-fluid w-100"
+                        style="object-fit: cover; height: 700px;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 2: Alternating Features - Headache Care -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="assets/images/explore.jpg" alt="Headache Clinic" class="img-fluid rounded-4 shadow w-100"
+                        style="object-fit: cover; height: 400px;">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="text-primary-brand mb-4">Dedicated Headache & Migraine Clinic</h2>
+                    <p class="text-muted-brand mb-4">Stop letting chronic pain dictate your life. Our specialized
+                        headache clinic uses a combination of modern preventative therapies, advanced tracking, and
+                        trigger management.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-accent me-2"></i> Trigger identification
+                            & mapping</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-accent me-2"></i> Advanced
+                            neuro-therapeutics</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-accent me-2"></i> Lifestyle modification
+                            support</li>
+                    </ul>
+                    <a href="#" class="explore-link fw-bold text-decoration-none">Explore Headache Care <i
+                            class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Alternating Features - Epilepsy Care -->
+    <section class="section-padding bg-soft">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="assets/images/epilepsy.jpg" alt="Epilepsy Center" class="img-fluid rounded-4 shadow w-100"
+                        style="object-fit: cover; height: 400px;">
+                </div>
+                <div class="col-lg-6 pe-lg-5">
+                    <h2 class="text-primary-brand mb-4">Comprehensive Epilepsy Care</h2>
+                    <p class="text-muted-brand mb-4">Living with seizures requires a careful, customized approach. We
+                        provide state-of-the-art EEG diagnostics and highly personalized seizure management protocols.
+                    </p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-accent me-2"></i> Routine & Ambulatory
+                            EEG</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-accent me-2"></i> Personalized
+                            medication regimens</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-accent me-2"></i> Ongoing disease
+                            monitoring</li>
+                    </ul>
+                    <a href="#" class="explore-link fw-bold text-decoration-none">Explore Epilepsy Care
+                        <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3.5: Why Choose Us -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <h2 class="text-primary-brand mb-5">Why Choose NeurologyCare</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="neuro-card bg-light border-0 p-4 h-100 rounded-4 transition-hover">
+                        <i class="bi bi-award fs-1 text-accent mb-3 d-block"></i>
+                        <h4 class="text-primary-brand mb-3">Board-Certified Experts</h4>
+                        <p class="text-muted-brand mb-0">Our specialists are recognized leaders in their respective
+                            neurological subspecialties, bringing decades of combined experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="neuro-card bg-light border-0 p-4 h-100 rounded-4 transition-hover">
+                        <i class="bi bi-hospital fs-1 text-accent mb-3 d-block"></i>
+                        <h4 class="text-primary-brand mb-3">State-of-the-Art Facility</h4>
+                        <p class="text-muted-brand mb-0">We utilize the latest in neuro-diagnostic imaging and EEG
+                            technology to ensure precise and rapid diagnoses.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="neuro-card bg-light border-0 p-4 h-100 rounded-4 transition-hover">
+                        <i class="bi bi-heart-pulse fs-1 text-accent mb-3 d-block"></i>
+                        <h4 class="text-primary-brand mb-3">Patient-Centered Focus</h4>
+                        <p class="text-muted-brand mb-0">We prioritize your comfort and understanding, taking the time
+                            to explain every detail of your personalized treatment plan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Testimonials -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <h2 class="text-primary-brand mb-5">What Our Patients Say</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="neuro-card bg-white shadow-sm border-0 p-4 h-100 d-flex flex-column">
+                        <div class="text-accent mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-muted-brand fst-italic mb-4">"Finally, a team that truly listens. The migraine
+                            treatment plan completely gave me my life back."</p>
+                        <div class="d-flex flex-column flex-md-row align-items-center mt-auto text-center text-md-start"><img src="assets/images/testi1.jpg"
+                                class="rounded-circle me-md-3 mb-2 mb-md-0" width="50" height="50" style="object-fit:cover;">
+                            <h6 class="text-primary-brand mb-0">- Sarah M.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="neuro-card bg-white shadow-sm border-0 p-4 h-100 d-flex flex-column">
+                        <div class="text-accent mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-muted-brand fst-italic mb-4">"The neurologists here are exceptional. Their
+                            attention to detail during my diagnosis was reassuring."</p>
+                        <div class="d-flex flex-column flex-md-row align-items-center mt-auto text-center text-md-start"><img src="assets/images/testi2.jpg"
+                                class="rounded-circle me-md-3 mb-2 mb-md-0" width="50" height="50" style="object-fit:cover;">
+                            <h6 class="text-primary-brand mb-0">- James T.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="neuro-card bg-white shadow-sm border-0 p-4 h-100 d-flex flex-column">
+                        <div class="text-accent mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-muted-brand fst-italic mb-4">"Incredible standard of care. The epilepsy center
+                            staff made me feel safe, understood, and well-cared for."</p>
+                        <div class="d-flex flex-column flex-md-row align-items-center mt-auto text-center text-md-start"><img src="assets/images/testi3.jpg"
+                                class="rounded-circle me-md-3 mb-2 mb-md-0" width="50" height="50" style="object-fit:cover;">
+                            <h6 class="text-primary-brand mb-0">- Elena R.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CTA (Accent Variant) -->
+    <section class="section-padding text-center" style="background-color: var(--accent);">
+        <div class="container">
+            <h2 class="text-white mb-4">Ready to Prioritize Your Neurological Health?</h2>
+            <p class="mb-5 text-white max-w-700 mx-auto opacity-75">Connect with our specialized team today to start
+                building your personalized care plan.</p>
+            <a href="appointments.html" class="btn btn-primary btn-lg px-5 border-0">Request a Consultation</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4" style="background-color: #0B1718 !important;">
+        <div class="container pt-4">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <a class="navbar-brand text-primary-brand fw-bold d-inline-block mb-3 fs-5" href="index.html">
+                        <img src="assets/images/logo.svg" alt="Logo" width="24" height="24"
+                            class="me-2 align-text-top">NeurologyCare
+                    </a>
+                    <p class="text-white-50 small mb-4">Expert neurological care with a patient-first approach.
+                        Precision diagnostics and personalized treatment.</p>
+                    <div class="d-flex gap-3 social-icons">
+                        <a href="#" class="text-white-50 text-decoration-none hover-white"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none hover-white"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none hover-white"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ps-lg-5">
+                    <h5 class="text-white mb-4 fs-6 fw-bold">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="doctors.html" class="text-white-50 text-decoration-none">Doctors</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4 fs-6 fw-bold">Patient Resources</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="appointments.html"
+                                class="text-white-50 text-decoration-none">Appointments</a></li>
+                        <li class="mb-2"><a href="login.html" class="text-white-50 text-decoration-none">Patient
+                                Portal</a></li>
+                        <li class="mb-2"><a href="dashboard/symptom-diary.html"
+                                class="text-white-50 text-decoration-none">Symptom Diary</a></li>
+                        <li class="mb-2"><a href="dashboard/test-results.html"
+                                class="text-white-50 text-decoration-none">Test Results</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white-50 text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4 fs-6 fw-bold">Contact</h5>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-3 d-flex"><i class="bi bi-telephone me-3 mt-1"></i> (555) 123-4567</li>
+                        <li class="mb-3 d-flex"><i class="bi bi-envelope me-3 mt-1"></i> care@neurologycare.demo</li>
+                        <li class="mb-3 d-flex"><i class="bi bi-geo-alt me-3 mt-1"></i> 123 Medical Center Dr.<br>Suite
+                            400<br>City, State 12345</li>
+                        <li class="d-flex"><i class="bi bi-clock me-3 mt-1"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary mt-5 mb-4">
+
+            <div class="row align-items-center pb-3">
+                <div class="col-md-12 text-center mb-3 mb-md-0">
+                    <p class="text-white-50 small mb-0">&copy; 2026 Neurology & Headache Care Clinic. All rights
+                        reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button id="scrollTopBtn" class="btn btn-primary rounded-circle shadow" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+
+
