@@ -1,0 +1,27 @@
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+    --bg: #0B1718;
+    --bg-soft: #122425;
+    --card: #122425;
+    --text: #F4FAF9;
+    --text-muted: #A0B0B0;
+    --border: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .bg-soft {
+    background-color: var(--bg-soft);
+}
+
+[data-theme="dark"] .neuro-card {
+    background-color: var(--card);
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .navbar {
+    background-color: var(--bg) !important;
+    border-bottom: 1px solid var(--border);
+}
+
+[data-theme="dark"] .text-muted-brand {
+    color: var(--text-muted);
+}
