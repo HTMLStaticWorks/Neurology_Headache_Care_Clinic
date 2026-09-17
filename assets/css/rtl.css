@@ -32,3 +32,18 @@
 [dir="rtl"] .bi-chevron-right::before {
     content: "\f284"; /* chevron-left */
 }
+
+
+html[dir="rtl"] .accordion-button::after {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+/* Force strict physical centering for 'Or continue with' in RTL */
+html[dir="rtl"] .position-relative.my-4 span.translate-middle {
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, -50%) !important;
+    white-space: nowrap !important;
+    z-index: 5 !important;
+}
