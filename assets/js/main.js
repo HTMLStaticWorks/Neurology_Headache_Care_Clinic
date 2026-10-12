@@ -113,3 +113,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+// Navigation state and accessible service-card interactions
+document.addEventListener('DOMContentLoaded', () => {
+    const currentFile = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.navbar a[href]').forEach(link => {
+        const href = (link.getAttribute('href') || '').split('#')[0].toLowerCase();
+        if (!href || href === '#') return;
+        if (href === currentFile) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        } else {
+            link.classList.remove('active');
+            link.removeAttribute('aria-current');
+        }
+    });
+    document.querySelectorAll('.service-card, .service-item').forEach(card => {
+        if (!card.hasAttribute('tabindex')) card.setAttribute('tabindex', '0');
+    });
+});
