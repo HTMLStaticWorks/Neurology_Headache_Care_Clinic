@@ -8,7 +8,9 @@
 <title>Home - Neurology &amp; Headache Care Clinic</title>
 <link href="assets/images/logo.svg" rel="icon" type="image/svg\+xml"/>
 <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link crossorigin="anonymous" disabled="" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" id="rtl-stylesheet" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
 <link href="assets/css/dark-mode.css" rel="stylesheet"/>
 <link href="assets/css/rtl.css" rel="stylesheet"/>
@@ -79,25 +81,140 @@
 </div>
 </div>
 </nav>
-<!-- SECTION 1: Split Hero -->
-<header class="home2-hero" style="margin-top: 76px;">
-<div class="container-fluid px-0">
-<div class="row g-0 align-items-center">
-<div class="col-lg-5 p-5 p-lg-5 order-2 order-lg-1 home2-hero-copy">
-<div class="max-w-700 mx-auto ps-lg-5">
-<span class="badge bg-primary-brand text-white rounded-pill px-3 py-2 mb-3">Expert Care</span>
-<h1 class="text-primary-brand mb-4 fw-bold display-4">Precision Neurology &amp; Compassionate Care
-                        </h1>
-<p class="text-muted-brand lead mb-5">We bring together advanced diagnostics and dedicated
-                            specialists to provide tailored pathways for complex neurological conditions.</p>
-<div class="d-flex flex-wrap gap-3">
-<a class="btn btn-primary rounded-pill px-4 py-3" href="appointments.html">Book a Consultation</a>
-<a class="btn btn-outline-primary rounded-pill px-4 py-3" href="services.html">Explore Services</a>
+<!-- SECTION 1: Redesigned Executive Care & Clinical Research Hero -->
+<header class="home2-hero" id="home2-hero" style="margin-top: 76px;">
+<div class="container position-relative z-2">
+<div class="row align-items-center gy-5">
+<!-- Left Column: Clinical Focus & Patient Action Hub -->
+<div class="col-lg-6 text-center text-lg-start pe-lg-4">
+<div class="d-inline-flex mb-3">
+<span class="home2-hero-badge">
+<span class="home2-pulse-dot"></span>
+<span>Advanced Headache &amp; Neurological Institute</span>
+</span>
+</div>
+<h1 class="home2-hero-title">
+                    Pioneering Headache Care &amp; <span class="home2-hero-highlight">Neurological Excellence</span>
+</h1>
+<p class="home2-hero-lead">
+                    Combining cutting-edge neuro-diagnostics, targeted CGRP therapies, and multidisciplinary specialist care to restore clarity, relieve chronic pain, and improve your quality of life.
+                </p>
+<div class="home2-cta-wrap justify-content-center justify-content-lg-start">
+<a class="home2-btn-accent" href="appointments.html">
+<i class="bi bi-calendar-check"></i>
+<span>Book Specialist Visit</span>
+</a>
+<a class="home2-btn-ghost" href="specialist-care.html">
+<i class="bi bi-compass"></i>
+<span>Explore Care Pathways</span>
+</a>
+</div>
+<!-- Trust & Key Clinical Metrics -->
+<div class="home2-metrics-row justify-content-center justify-content-lg-start">
+<div class="home2-metric-item">
+<span class="home2-metric-num">98.6%</span>
+<span class="home2-metric-label">Diagnostic Precision</span>
+</div>
+<div class="home2-metric-item">
+<span class="home2-metric-num">3,200+</span>
+<span class="home2-metric-label">Patients Relieved</span>
+</div>
+<div class="home2-metric-item">
+<span class="home2-metric-num">&lt; 24h</span>
+<span class="home2-metric-label">Urgent Headache Triage</span>
+</div>
+<div class="w-100 d-none d-sm-block mt-1"></div>
+<div class="home2-trust-badge">
+<span class="text-warning">
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+<i class="bi bi-star-fill"></i>
+</span>
+<span><strong>4.9 / 5</strong> Patient Satisfaction (Verified Outpatient Care)</span>
 </div>
 </div>
 </div>
-<div class="col-lg-7 order-1 order-lg-2 home2-hero-media">
-<img alt="Medical Professional" class="img-fluid w-100" src="assets/images/home2-hero.jpg" style="object-fit: cover; height: 650px;"/>
+<!-- Right Column: Layered Multi-Dimensional Visual Showcase -->
+<div class="col-lg-6">
+<div class="home2-visual-wrapper">
+<!-- Main Image Frame -->
+<div class="home2-main-frame">
+<img alt="Neurology Clinical Consultation" class="img-fluid" src="assets/images/home2-hero.jpg"/>
+<div class="home2-frame-overlay"></div>
+</div>
+<!-- Floating Card 1: Senior Specialist Badge -->
+<div class="home2-float-doctor">
+<img alt="Dr. Marcus Vance" src="assets/images/doctor1.jpg"/>
+<div>
+<div class="fw-bold text-dark fs-6" style="font-family: var(--font-body); line-height: 1.2;">Dr. Marcus Vance, MD</div>
+<small class="text-muted d-block" style="font-size: 0.78rem;">Chief of Neurovascular Care</small>
+<span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-0 mt-1" style="font-size: 0.72rem;">Available This Week</span>
+</div>
+</div>
+<!-- Floating Card 2: Rapid Relief Pathway -->
+<div class="home2-float-diagnostic">
+<div class="home2-float-icon-box">
+<i class="bi bi-activity"></i>
+</div>
+<div>
+<div class="fw-bold fs-6 text-white" style="font-family: var(--font-body); line-height: 1.2;">Targeted Relief Protocol</div>
+<small class="text-white-50 d-block" style="font-size: 0.78rem;">Botox, CGRP &amp; Nerve Blocks</small>
+<span class="text-accent fw-semibold" style="font-size: 0.75rem;"><i class="bi bi-check2-circle me-1"></i>72% Pain Reduction</span>
+</div>
+</div>
+<!-- Seal Badge -->
+<div class="home2-seal-badge">
+<i class="bi bi-award-fill"></i>
+<span>Level-4<br/>Center</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Integrated Specialty Quick-Access Strip -->
+<div class="home2-specialty-strip">
+<div class="row g-3">
+<div class="col-md-6 col-xl-3">
+<div class="home2-specialty-card">
+<div class="home2-spec-icon">
+<i class="bi bi-lightning-charge"></i>
+</div>
+<h4 class="home2-spec-title">Migraine &amp; Cluster</h4>
+<p class="home2-spec-desc">Specialized acute triage, preventive infusion therapies, and nerve decompression protocols.</p>
+<a class="home2-spec-link" href="specialist-care.html">Explore Clinic <i class="bi bi-arrow-right"></i></a>
+</div>
+</div>
+<div class="col-md-6 col-xl-3">
+<div class="home2-specialty-card">
+<div class="home2-spec-icon">
+<i class="bi bi-pulse"></i>
+</div>
+<h4 class="home2-spec-title">Epilepsy &amp; Seizure</h4>
+<p class="home2-spec-desc">64-channel continuous video-EEG monitoring and personalized anti-seizure protocols.</p>
+<a class="home2-spec-link" href="specialist-care.html">Explore Clinic <i class="bi bi-arrow-right"></i></a>
+</div>
+</div>
+<div class="col-md-6 col-xl-3">
+<div class="home2-specialty-card">
+<div class="home2-spec-icon">
+<i class="bi bi-shield-check"></i>
+</div>
+<h4 class="home2-spec-title">Cognitive Health</h4>
+<p class="home2-spec-desc">Comprehensive memory evaluations, biomarker neuro-imaging, and personalized rehabilitation.</p>
+<a class="home2-spec-link" href="services.html">Explore Clinic <i class="bi bi-arrow-right"></i></a>
+</div>
+</div>
+<div class="col-md-6 col-xl-3">
+<div class="home2-specialty-card">
+<div class="home2-spec-icon">
+<i class="bi bi-heart-pulse"></i>
+</div>
+<h4 class="home2-spec-title">Movement Disorders</h4>
+<p class="home2-spec-desc">Precision tremor mapping, neuromodulation programming, and gait recovery therapy.</p>
+<a class="home2-spec-link" href="services.html">Explore Clinic <i class="bi bi-arrow-right"></i></a>
+</div>
+</div>
 </div>
 </div>
 </div>

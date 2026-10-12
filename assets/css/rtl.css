@@ -47,3 +47,22 @@ html[dir="rtl"] .position-relative.my-4 span.translate-middle {
     white-space: nowrap !important;
     z-index: 5 !important;
 }
+
+[dir="rtl"] .bi-arrow-right::before {
+    content: "\f12f"; /* bi-arrow-left */
+}
+
+@media (min-width: 992px) {
+    [dir="rtl"] .home2-float-doctor {
+        left: auto !important;
+        right: -15px !important;
+    }
+    [dir="rtl"] .home2-float-diagnostic {
+        right: auto !important;
+        left: -15px !important;
+    }
+    [dir="rtl"] .home2-seal-badge {
+        right: auto !important;
+        left: -10px !important;
+    }
+}

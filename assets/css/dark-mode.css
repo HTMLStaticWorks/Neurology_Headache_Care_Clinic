@@ -25,3 +25,13 @@
 [data-theme="dark"] .text-muted-brand {
     color: var(--text-muted);
 }
+
+[data-theme="dark"] .home2-float-doctor {
+    background: rgba(18, 36, 37, 0.94);
+    color: #F4FAF9;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .home2-float-doctor .text-muted {
+    color: #A0B0B0 !important;
+}
